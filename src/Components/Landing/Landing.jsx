@@ -14,8 +14,10 @@ import seven from "../../assets/seven.svg";
 import eight from "../../assets/eight.svg";
 import nine from "../../assets/nine.svg";
 import ten from "../../assets/ten.svg";
-
-
+import eleven from "../../assets/eleven.png";
+import twelve from "../../assets/twelve.png";
+import medicine from "../../assets/medicine.png";
+import star from "../../assets/star.svg";
 
 const StyledButton = styled(Button)`
   && {
@@ -29,7 +31,7 @@ const Landing = () => {
     <>
       {/* landing page */}
 
-      <div className="flex justify-center relative items-left flex-col h-screen w-9/12 ml-20 max-md:ml-5 w-11/12 ">
+      <div className="flex justify-center relative items-left flex-col w-9/12 ml-20 max-md:ml-5 w-11/12 ">
         <h3 className="text-2xl my-3">Namaste, Welcome to Amrutam</h3>
         <h1 className="bg-[url('../../assets/bg.png')] bg-cover bg-center text-5xl font-bold my-3 max-md:text-4xl:font-normal max-sm:text-3xl ">
           Step into Holistic Healing with Ayurveda <br className="my-3" />
@@ -182,6 +184,150 @@ const Landing = () => {
           </div>
         </div> */}
       </div>
+
+      {/* Consultation parts */}
+
+      <div className="flex justify-center items-center w-screen bg-yellow-50 flex-col pb-10">
+        <h1 className="w-4/5 mt-10 text-4xl text-center text-green-900">
+          What sets Ayurvedic consultations apart?
+        </h1>
+        <div className="flex justify-center items-center flex-wrap w-11/12 mt-10">
+          <div className="flex justify-center items-center flex-col h-56 w-1/3 max-lg:w-96 p-5 bg-white rounded-xl border-t-4 border-green-900 m-2">
+            <h1 className="text-3xl text-center text-green-900">
+              स्वस्थस्य स्वास्थ्य रक्षणं, आतुरस्य विकार प्रशमनं ।"
+            </h1>
+            <p className="text-1xl text-center text-green-900 mt-5">
+              [ Meaning: The Goal of Ayurveda is to maintain the health of a
+              healthy person and to cure the disease of a diseased person. ]
+            </p>
+          </div>
+          <div className="flex justify-center items-center flex-col w-2/6 m-2 max-lg:w-96">
+            <img src={eleven} className=" h-56 w-full"></img>
+          </div>
+          <div className="flex justify-center items-center flex-col m-2 h-56 w-96 max-lg:w-96 p-5 bg-white rounded-xl border-t-4 border-green-900">
+            <h1 className="text-3xl text-center text-green-900">
+              Precise Diagnosis
+            </h1>
+            <p className="text-1xl text-center text-green-900  mt-5">
+              Ayurveda's core principles revolve around Vata, Pitta, and Kapha
+              doshas, guiding you with precise diagnosis and treatment.
+            </p>
+          </div>
+          <div className="flex justify-center items-center flex-col ml-2 m-2 h-56 w-1/4 p-5 max-lg:w-96 bg-white rounded-xl border-t-4 border-green-900">
+            <h1 className="text-3xl text-center text-green-900">
+              Precise Diagnosis
+            </h1>
+            <p className="text-1xl text-center text-green-900 mt-5">
+              Ayurveda's core principles revolve around Vata, Pitta, and Kapha
+              doshas, guiding you with precise diagnosis and treatment.
+            </p>
+          </div>
+          <div className="flex justify-center items-center flex-col w-1/5 m-2 max-lg:w-96">
+            <img src={medicine} className="h-56 w-full"></img>
+          </div>
+          <div className="flex justify-center items-center flex-col ml-2 m-2 h-56 w-1/4 p-5 bg-white rounded-xl border-t-4 border-green-900 max-lg:w-96">
+            <h1 className="text-3xl text-center text-green-900">
+              Individual Treatment
+            </h1>
+            <p className="text-1xl text-center text-green-900 mt-5">
+              all Treatments are personalized based on a person's unique
+              constitution and health concerns.
+            </p>
+          </div>
+          <div className="flex justify-center m-2 items-center flex-col w-1/5 max-lg:w-96">
+            <img src={twelve} className="h-56 w-full"></img>
+          </div>
+        </div>
+      </div>
+
+      {/* book Consultation page */}
+
+      <div
+        className="h-screen w-screen flex justify-center items-center flex-col"
+        style={{
+          backgroundImage: `url(" + eleven + ")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "100vh",
+          width: "100vw",
+        }}
+      >
+        <h1 className="text-6xl text-center text-green-900">
+          Ready to restore harmony in your mind, body and spirit?
+        </h1>
+        <Stack direction="row" spacing={2} className="my-3">
+          <StyledButton variant="contained">Book a consultation</StyledButton>
+        </Stack>
+      </div>
+
+      {/* Ayurvedic approach */}
+
+      <div className="min-w-screen flex justify-center items-center flex-col">
+        <h1 className="text-6xl text-center text-green-900 mb-10 font-bold">
+          Our ayurvedic approach
+        </h1>
+        <p className="mb-20 text-2xl w-4/5  text-center">
+          At Amrutam we follow a unique and personalized approach to healing.
+          Our expert practitioners begin each treatment process by conducting a
+          thorough analysis of the patient’s body type, medical history, and
+          current health conditions.
+        </p>
+        <div className=" w-3/4 flex justify-center items-center flex-row flex-wrap">
+          <div className=" w-60 h-80 flex justify-center items-center flex-col bg-yellow-50  mr-5 p-5 text-center rounded-2xl border-t-8 border-emerald-900 mb-5">
+            <div className="h-16 w-16 rounded-full bg-emerald-900 mb-5 text-4xl flex justify-center items-center text-white font-bold">
+              1
+            </div>
+            <h1 className="text-2xl text-center text-green-900 mb-5 font-bold">
+              Make Appointment
+            </h1>
+            <p className="mb-5">
+              You must make an appointment in advance, to choose the service and
+              date.
+            </p>
+          </div>
+          <div className=" w-60 h-80 flex justify-center items-center flex-col bg-yellow-50 mr-5 p-5 text-center rounded-2xl border-t-8 border-emerald-900 mb-5">
+            <div className="h-16 w-16 rounded-full bg-emerald-900 mb-5 text-4xl flex justify-center items-center text-white font-bold">
+              2
+            </div>
+            <h1 className="text-2xl text-center text-green-900 mb-5 font-bold">
+              Consultations
+            </h1>
+            <p className="mb-5">
+              The next stage involves a thorough consultation with an Ayurveda
+              personalized approach to practitioner.
+            </p>
+          </div>
+          <div className="w-60 h-80 flex justify-center items-center flex-col bg-yellow-50 mr-5 p-5 text-center rounded-2xl border-t-8 border-emerald-900 mb-5">
+            <div className="h-16 w-16 rounded-full bg-emerald-900 mb-5 text-4xl flex justify-center items-center text-white font-bold">
+              3
+            </div>
+            <h1 className="text-2xl text-center text-green-900 mb-5 font-bold">
+              Treatment Planning
+            </h1>
+            <p className="mb-5">
+              The Ayurvedic practitioner creates a personalized treatment plan
+              for you
+            </p>
+          </div>
+          <div className=" w-60 h-80 flex justify-center items-center flex-col bg-yellow-50 p-5 text-center rounded-2xl border-t-8 border-emerald-900 mb-5">
+            <div className="h-16 w-16 rounded-full bg-emerald-900 text-center mb-5 text-4xl flex justify-center items-center text-white font-bold">
+              4
+            </div>
+            <h1 className="text-2xl text-center text-green-900 mb-5 font-bold">
+              Maintenance
+            </h1>
+            <p className="mb-5">
+              These visits allow for assessment of progress, adjustments to the
+              treatment.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* {  review} */}
+
+    
+      
     </>
   );
 };
